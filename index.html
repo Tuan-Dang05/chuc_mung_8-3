@@ -1,0 +1,111 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tuntundepzai</title>
+    <link rel="stylesheet" href="canvas.css" />
+    <link rel="stylesheet" href="present.css" />
+    <link rel="stylesheet" href="card.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" type="text/css" href="./background.css">
+    <script src="jquery.js"></script>
+    
+    <!-- <script>document.documentElement.className = "js";
+
+      var supportsCssVars = function supportsCssVars() {
+      var e,t = document.createElement("style");
+        return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e;
+      };
+      
+      supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+        </head> -->
+
+        <body class="demo-1 loading">
+          <!-- BACKGROUND -->
+    <main>
+      
+      <div class="frame">
+      </div>
+      <div class="content">
+        <div class="grid">
+          <div class="grid__item pos-2"><div class="grid__item-img" style="background-image:url(./img/img1.png);" class="hover" ></div></div>
+          <div class="grid__item pos-3"><div class="grid__item-img" style="background-image:url(./img/img3.jpg);" class="hover"></div></div>
+          <div class="grid__item pos-4"><div class="grid__item-img" style="background-image:url(./img/img4.jpg);" class="hover"></div></div>
+          <div class="grid__item pos-1"><div class="grid__item-img" style="background-image:url(./img/img2.jpg);" class="hover"></div></div>
+          <div class="grid__item pos-5"><div class="grid__item-img" style="background-image:url(./img/img5.jpg);" class="hover"></div></div>
+          <div class="grid__item pos-6"><div class="grid__item-img" style="background-image:url(./img/img6.jpg);" class="hover"></div></div>
+          <div class="grid__item pos-7"><div class="grid__item-img" style="background-image:url(./img/img7.jpg);" class="hover"></div></div>
+          <div class="grid__item pos-8"><div class="grid__item-img" style="background-image:url(./img/img8.jpg);" class="hover"></div></div>
+          <div class="grid__item pos-9"><div class="grid__item-img" style="background-image:url(./img/img9.jpg);" class="hover"></div></div>
+          <div class="grid__item pos-10"><div class="grid__item-img" style="background-image:url(./img/img10.png);" class="hover"></div></div>
+        </div>
+                <!-- <h2 class="content__title no-select"> -->
+          <!-- <span>Love</span> -->
+        <!-- </h2> -->
+        <h2 class="content__title no-select">
+           <!-- PRESENT -->
+           <div class="parent">
+            <canvas id="canvas"></canvas>
+      <section class="above-fold">
+        <div class="wrap-present">
+          <div class="present-box" id="present">
+            <div class="present">
+              <div class="img-wrap" id="present-image"></div>
+            </div>
+            <div class="side front"></div>
+            <div class="side back"></div>
+            <div class="side left"></div>
+            <div class="side right"></div>
+            <div class="side top">
+              <span class="to">
+                <span class="name" id="nametag"> </span>
+              </span>
+            </div>
+            <div class="side bottom"></div>
+          </div>
+        </div>
+        <p class="info-text" style="color:white;">Chạm vào để mở</p>
+      </section>
+
+      <div id="card">
+        <h4 class="title-card">💘Ib AnhTuan💘</h4>
+
+        <img
+          src=""
+          class="honey"/>
+
+        <h5 class="content-card">
+          Viết lời chúc 💘
+        </h5>
+        <button type="button" id="btn">Chạm <3 </button>
+      </div>
+    </div>
+          <!-- <span class="content__title-sub">Chúc em 8/3 xinh đẹp như ảnh trên mạng</span> -->
+        </h2>
+      </div>
+    </main>
+        <svg class="cursor" width="80" height="80" viewBox="0 0 80 80">
+      <circle class="cursor__inner" cx="40" cy="40" r="20"></circle>
+    </svg>
+
+
+  </body>
+  <script src="./background.js"></script>
+  <script src="config.js"></script>
+  <script src="canvas.js"></script>
+  <script src="present.js"></script>
+
+  <script>
+    var button = document.getElementById("btn");
+         button.onclick = function(){
+             var doan1 = prompt("1 + 1 = mấy ?")
+             if (doan1 == 2) {
+               document.write("LÀM VIDEO ĐÊ")
+             }else{
+              alert("Mách ple cậu ko biết giải toán <3")
+             }
+             
+         }
+ </script>
+</html>
