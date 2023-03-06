@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>tuntundepzai</title>
-    <link rel="stylesheet" href="" />
+    <!-- <link rel="stylesheet" href="canvas.css" /> -->
     <link rel="stylesheet" href="present.css" />
     <link rel="stylesheet" href="card.css" />
     <link rel="stylesheet" href="index.css" />
@@ -20,7 +20,21 @@
       
       supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
         </head> -->
-
+<style>
+  .csw-btn-button {
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 35px;
+  color: #ffffff !important;
+  border-radius: 5px;
+  background: #9B6A1D;
+  border: 1px solid #9B6A1D;
+  transition: 0.4s;
+}
+.csw-btn-button:hover {
+  background: #292929;
+}
+</style>
         <body class="demo-1 loading">
           <!-- BACKGROUND -->
     <main>
@@ -39,6 +53,12 @@
           <div class="grid__item pos-8"><div class="grid__item-img" style="background-image:url(./img/img8.jpg);" class="hover"></div></div>
           <div class="grid__item pos-9"><div class="grid__item-img" style="background-image:url(./img/img9.jpg);" class="hover"></div></div>
           <div class="grid__item pos-10"><div class="grid__item-img" style="background-image:url(./img/img10.png);" class="hover"></div></div>
+          <div class="grid__item pos-11"><div class="grid__item-img" style="background-image:url(./img/img11.jpg);" class="hover"></div></div>
+          <div class="grid__item pos-12"><div class="grid__item-img" style="background-image:url(./img/img12.jpg);" class="hover"></div></div>
+          <div class="grid__item pos-13"><div class="grid__item-img" style="background-image:url(./img/img13.jpg);" class="hover"></div></div>
+          <div class="grid__item pos-14"><div class="grid__item-img" style="background-image:url(./img/img14.jpg);" class="hover"></div></div>
+          <div class="grid__item pos-15"><div class="grid__item-img" style="background-image:url(./img/img15.jpg);" class="hover"></div></div>
+          
         </div>
                 <!-- <h2 class="content__title no-select"> -->
           <!-- <span>Love</span> -->
@@ -65,7 +85,7 @@
             <div class="side bottom"></div>
           </div>
         </div>
-        <p class="info-text" style="color:white;">Chạm vào để mở</p>
+        <p class="info-text" style="color:white; font-size: 25px;">Chạm vào để mở</p>
       </section>
 
       <div id="card">
@@ -78,7 +98,7 @@
         <h5 class="content-card">
           Viết lời chúc 💘
         </h5>
-        <button type="button" id="btn">Chạm <3 </button>
+        <button type="button" id="btn">Bấm</button>
       </div>
     </div>
           <!-- <span class="content__title-sub">Chúc em 8/3 xinh đẹp như ảnh trên mạng</span> -->
@@ -87,9 +107,10 @@
     </main>
         <svg class="cursor" width="80" height="80" viewBox="0 0 80 80">
       <circle class="cursor__inner" cx="40" cy="40" r="20"></circle>
+   
     </svg>
 
-
+<a href="./video.html" id="video"></a>
   </body>
   <script src="./background.js"></script>
   <script src="config.js"></script>
@@ -97,13 +118,18 @@
   <script src="present.js"></script>
 
   <script>
+    // const videourl = "./video/video.mp4"
     var button = document.getElementById("btn");
          button.onclick = function(){
-             var doan1 = prompt("1 + 1 = mấy ?")
-             if (doan1 == 2) {
-               document.write("LÀM VIDEO ĐÊ")
-             }else{
-              alert("Mách ple cậu ko biết giải toán <3")
+             var doan1 = prompt("TUẤN ĐẶNG CÓ ĐẸP TRAI KHÔNG ?")
+             if (doan1.search("c") == 0 || doan1.search("C") == 0)  {
+                document.write("<button style='50px' type=button onclick=location.href='./video/video.mp4' name=Click! value=click class=csw-btn-button > Click vào đây !!");
+              // str.appendChild(_urllink);
+              // var URL = "https://hoclaptrinh.vn"; 
+              // alert(str.link(URL))
+               
+             } else{
+              alert("Không đẹp cũng phải khen đẹp")
              }
              
          }
