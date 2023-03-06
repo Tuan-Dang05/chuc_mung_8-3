@@ -1,3 +1,6 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
 #card {
     margin: 8%;
     position: absolute;
@@ -31,7 +34,7 @@ h4 {
     -webkit-background-clip: text;
     
     /* background-image: url("https://i.pinimg.com/originals/20/21/7f/20217f7fa2c9701b8128d8fb153a4db9.gif");   */
-    font-family: 'Allura', cursive;
+    font-family: Arial, Helvetica, sans-serif;
     padding: -2%;
     font-size: 19px;
     overflow: hidden;
@@ -43,7 +46,7 @@ h5 {
     -webkit-background-clip: text;
     
     /* background-image: url("https://i.pinimg.com/originals/20/21/7f/20217f7fa2c9701b8128d8fb153a4db9.gif");   */
-    font-family: 'Allura', cursive;
+    font-family: Arial, Helvetica, sans-serif;
     padding: -2%;
     font-size: 19px;
     overflow: hidden;
@@ -52,9 +55,9 @@ h5 {
 #card button{
     text-align: center;
     align-items: center;
-    font-family: 'Allura', cursive;
+    font-family: Arial, Helvetica, sans-serif;
     overflow: hidden;
-    font-size: 15px;
+    font-size: 25px;
     margin:-5px 0px 10px 140px;
     color:cyan;
     /* background-color: black; */
