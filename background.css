@@ -242,7 +242,7 @@ a:focus {
 }
 
 .pos-7 {
-	grid-area: 20 / 30 / 20 / 10;
+	grid-area: 25 / 30 / 20 / 10;
 }
 
 .pos-8 {
@@ -255,6 +255,21 @@ a:focus {
 
 .pos-10 {
  	grid-area: 37 / 39 / 48 / 47;
+}
+.pos-11 {
+	grid-area: 20 / 25 / 40 / 50;
+}
+.pos-12 {
+	grid-area: 10 / 60 / 35 / 30;
+}
+.pos-13 {
+	grid-area: 30 / 50 / 15 / 20;
+}
+.pos-14 {
+	grid-area: 32 / 15 / 45 / 75;
+}
+.pos-15 {
+	grid-area: 40 / 15 / 15 / 20;
 }
 
 /* .content__title {
