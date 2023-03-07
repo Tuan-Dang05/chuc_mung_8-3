@@ -271,7 +271,18 @@ a:focus {
 .pos-15 {
 	grid-area: 40 / 15 / 15 / 20;
 }
-
+.pos-17 {
+	grid-area: 25 / 15 / 15 / 30;
+}
+.pos-18 {
+	grid-area: 75 / 55 / 15 / 70;
+}
+.pos-19 {
+	grid-area: 12 / 1 / 5 / 25;
+}
+.pos-20 {
+	grid-area: 19 / 4 / 15 / 50;
+}
 /* .content__title {
 	font-family: myFont;
 	font-weight: 400;
